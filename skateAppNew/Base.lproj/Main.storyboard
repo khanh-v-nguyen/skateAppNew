@@ -7,28 +7,145 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--messages-->
+        <!--Messages-->
         <scene sceneID="IKU-fL-niV">
             <objects>
-                <viewController id="Axf-fU-BzM" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPq-UU-MWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="Axf-fU-BzM" customClass="MessageViewController" customModule="skateAppNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C9A-jw-Xut">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRh-zr-gMU">
-                                <rect key="frame" x="34" y="122" width="46" height="30"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cb5-Nx-0re">
+                                <rect key="frame" x="0.0" y="73" width="414" height="740"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" rowHeight="76" id="enw-D1-gGM">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="enw-D1-gGM" id="M0O-Pv-O9W">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="karlie-kloss-profile-circle" translatesAutoresizingMaskIntoConstraints="NO" id="urs-Kk-HRg">
+                                                    <rect key="frame" x="20" y="0.0" width="75" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Karlie Kloss" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49I-E7-jBu">
+                                                    <rect key="frame" x="103" y="11" width="124" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubc-2b-vKG">
+                                                    <rect key="frame" x="103" y="38" width="291" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" title="have you heard about the new skatepark?">
+                                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BF6-UI-846" kind="show" id="SNq-Ux-SYp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Jma-ry-OrK">
+                                        <rect key="frame" x="0.0" y="104" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jma-ry-OrK" id="3MX-Z2-0YV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="F1u-UT-fsp">
+                                        <rect key="frame" x="0.0" y="184" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F1u-UT-fsp" id="GvH-Bi-Eue">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4cW-ZN-GcQ">
+                                        <rect key="frame" x="0.0" y="264" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4cW-ZN-GcQ" id="kSy-Tv-obp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="PWW-On-Qo5">
+                                        <rect key="frame" x="0.0" y="344" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PWW-On-Qo5" id="tSL-Wj-IWU">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Pde-jI-CZa">
+                                        <rect key="frame" x="0.0" y="424" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pde-jI-CZa" id="NFD-N3-gqu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Bo4-Hx-fDX">
+                                        <rect key="frame" x="0.0" y="504" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bo4-Hx-fDX" id="vOW-Cu-Tsd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="9Pj-aD-JI7">
+                                        <rect key="frame" x="0.0" y="584" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Pj-aD-JI7" id="Pys-lD-Zit">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="apW-IM-XbS">
+                                        <rect key="frame" x="0.0" y="664" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="apW-IM-XbS" id="dZI-Qp-XzN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="GS5-8H-jnz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="messages" image="paperplane.fill" catalog="system" id="Sk6-cr-sYq"/>
+                    <navigationItem key="navigationItem" title="Messages" id="Top-L9-TDo"/>
+                    <connections>
+                        <outlet property="karlieMessage" destination="enw-D1-gGM" id="dWn-cr-yel"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IPq-UU-MWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="391"/>
+            <point key="canvasLocation" x="957.97101449275374" y="390.40178571428572"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oit-T2-H1t">
+            <objects>
+                <viewController id="BF6-UI-846" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hiy-3J-div">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gbt-xV-FDa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="voZ-na-nSR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RgU-QQ-WNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768" y="390"/>
         </scene>
         <!--Practice Log-->
         <scene sceneID="Afg-JP-Vpg">
@@ -131,7 +248,7 @@
                                 <state key="normal" image="suit.heart.fill" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnM-Il-l0Y">
-                                <rect key="frame" x="268" y="773" width="126" height="24"/>
+                                <rect key="frame" x="268" y="768" width="126" height="29"/>
                                 <color key="backgroundColor" red="0.45098039220000002" green="0.36078431370000003" blue="0.86666666670000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -140,9 +257,9 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlP-XN-2mf">
-                                <rect key="frame" x="42" y="122" width="50" height="50"/>
+                                <rect key="frame" x="42" y="111" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="karlie-kloss-profile-2"/>
+                                <state key="normal" backgroundImage="karlie-kloss-profile-circle"/>
                                 <connections>
                                     <segue destination="Bli-Ey-lkf" kind="show" id="iJL-HI-56H"/>
                                 </connections>
@@ -210,7 +327,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="karlie-kloss-profile-2" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-JE-TfG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="karlie-kloss-profile-circle" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-JE-TfG">
                                 <rect key="frame" x="299" y="141" width="74" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -255,7 +372,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="845-PY-BEe" kind="relationship" relationship="viewControllers" id="7Hf-qN-c5k"/>
-                        <segue destination="Axf-fU-BzM" kind="relationship" relationship="viewControllers" id="3Up-xB-O63"/>
+                        <segue destination="q6L-WR-hZX" kind="relationship" relationship="viewControllers" id="3Up-xB-O63"/>
                         <segue destination="NZ8-6Q-Hzs" kind="relationship" relationship="viewControllers" id="5as-s4-1xI"/>
                     </connections>
                 </tabBarController>
@@ -380,10 +497,29 @@
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="1059.375"/>
         </scene>
+        <!--messages-->
+        <scene sceneID="f9l-WS-6H2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q6L-WR-hZX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="messages" image="paperplane.fill" catalog="system" id="Sk6-cr-sYq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qg2-t5-Bqi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Axf-fU-BzM" kind="relationship" relationship="rootViewController" id="MTQ-4A-xcu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kTI-n0-PUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="390.40178571428572"/>
+        </scene>
     </scenes>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="karlie-kloss-profile-2" width="300" height="300"/>
+        <image name="karlie-kloss-profile-circle" width="759" height="760"/>
         <image name="karliekloss-skatepark2" width="1000" height="667"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>
