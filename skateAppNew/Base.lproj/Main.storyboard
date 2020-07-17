@@ -395,6 +395,9 @@
                                 <state key="normal" title="add trick to log">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="xM3-bf-OfC" eventType="touchUpInside" id="dWt-tU-SLI"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqM-EP-QUf">
                                 <rect key="frame" x="45" y="317" width="324" height="218.5"/>

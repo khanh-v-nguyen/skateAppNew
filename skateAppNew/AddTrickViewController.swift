@@ -20,7 +20,7 @@ class AddTrickViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func addTapped(_ sender: Any) {
+    @IBAction func addButtonTapped(_ sender: Any) {
         let trick = tricks()
         
         if let titleText = titleTextField.text {
@@ -30,6 +30,18 @@ class AddTrickViewController: UIViewController {
         previousVC.tableView.reloadData()
         navigationController?.popViewController(animated: true)
     }
+    
+    //you can delete this 
+    /*@IBAction func addTapped(_ sender: Any) {
+        let trick = tricks()
+        
+        if let titleText = titleTextField.text {
+            trick.name = titleText
+        }
+        previousVC.tricks.append(trick)
+        previousVC.tableView.reloadData()
+        navigationController?.popViewController(animated: true)
+    }*/
     
     /*
     // MARK: - Navigation
