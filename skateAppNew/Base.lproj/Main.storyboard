@@ -84,14 +84,30 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zZa-Tq-kG6">
                                 <rect key="frame" x="103" y="111" width="213" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.67715503119999998" green="0.70588617210000004" blue="0.96264630559999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.45098039220000002" green="0.36078431370000003" blue="0.86666666670000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="have you heard about the new skatepark?">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u9n-QN-aqV">
+                                <rect key="frame" x="20" y="746" width="347" height="34"/>
+                                <color key="backgroundColor" red="0.56302795009999995" green="0.62785826109999998" blue="0.96264630559999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="eD5-zt-inf"/>
+                                    <constraint firstAttribute="height" constant="34" id="fpn-fS-Zjd"/>
+                                    <constraint firstAttribute="width" secondItem="u9n-QN-aqV" secondAttribute="height" multiplier="347:34" id="nSf-bA-qAY"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u9n-QN-aqV" firstAttribute="leading" secondItem="gbt-xV-FDa" secondAttribute="leading" constant="20" id="Hlg-wc-Bld"/>
+                            <constraint firstItem="gbt-xV-FDa" firstAttribute="bottom" secondItem="u9n-QN-aqV" secondAttribute="bottom" constant="33" id="sGE-ow-hvb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gbt-xV-FDa"/>
                     </view>
                     <navigationItem key="navigationItem" id="voZ-na-nSR"/>
@@ -751,22 +767,29 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ug-7x-R9o">
-                                <rect key="frame" x="20" y="746" width="316" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ug-7x-R9o">
+                                <rect key="frame" x="20" y="746" width="347" height="34"/>
                                 <color key="backgroundColor" red="0.56302795009999995" green="0.62785826109999998" blue="0.96264630559999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Yj2-TB-V16"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9Ug-7x-R9o" firstAttribute="leading" secondItem="j4K-F2-Ua6" secondAttribute="leading" constant="20" id="8UG-1Z-Nch"/>
+                            <constraint firstItem="j4K-F2-Ua6" firstAttribute="bottom" secondItem="9Ug-7x-R9o" secondAttribute="bottom" constant="33" id="zUs-lp-pli"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j4K-F2-Ua6"/>
                     </view>
                     <navigationItem key="navigationItem" id="tr0-ci-RSy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSr-MM-e8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2742" y="676"/>
+            <point key="canvasLocation" x="2740.579710144928" y="675.66964285714278"/>
         </scene>
         <!--feed-->
         <scene sceneID="RO1-FA-Hbh">
