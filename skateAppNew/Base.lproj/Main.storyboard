@@ -48,9 +48,6 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="BF6-UI-846" kind="show" id="SNq-Ux-SYp"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Jma-ry-OrK">
                                         <rect key="frame" x="0.0" y="104" width="414" height="80"/>
@@ -124,7 +121,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="All Messages" id="Top-L9-TDo"/>
                     <connections>
-                        <outlet property="karlieMessage" destination="enw-D1-gGM" id="dWn-cr-yel"/>
+                        <segue destination="BF6-UI-846" kind="show" identifier="messagesToKarlie" id="SsL-Yd-RAJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IPq-UU-MWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -146,70 +143,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgU-QQ-WNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1768" y="390"/>
-        </scene>
-        <!--Practice Log-->
-        <scene sceneID="Afg-JP-Vpg">
-            <objects>
-                <viewController id="jtG-go-Ulw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ybb-6Y-t9G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HRz-HQ-nNc">
-                                <rect key="frame" x="0.0" y="108" width="414" height="223"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="k0l-Sb-l7Y">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k0l-Sb-l7Y" id="7oW-wu-sUV">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Xy9-aK-FHV">
-                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xy9-aK-FHV" id="xZi-ia-8xn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bkZ-TV-IUw">
-                                        <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bkZ-TV-IUw" id="pnq-Ru-tef">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwF-ig-X7j">
-                                <rect key="frame" x="20" y="736" width="192" height="42"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title=" add trick" image="plus.circle" catalog="system">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="xM3-bf-OfC" kind="show" id="GrD-8W-9nT"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="XwF-ig-X7j" firstAttribute="leading" secondItem="wKi-Dd-Qi8" secondAttribute="leading" constant="20" id="Fpv-r9-2km"/>
-                            <constraint firstItem="wKi-Dd-Qi8" firstAttribute="bottom" secondItem="XwF-ig-X7j" secondAttribute="bottom" constant="35" id="aWH-WW-oTk"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="wKi-Dd-Qi8"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Practice Log" id="MsB-h8-Gme"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pgY-vm-hls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="942.02898550724649" y="1059.375"/>
         </scene>
         <!--Home-->
         <scene sceneID="b5Z-jv-2EF">
@@ -373,17 +306,52 @@
                     <connections>
                         <segue destination="845-PY-BEe" kind="relationship" relationship="viewControllers" id="7Hf-qN-c5k"/>
                         <segue destination="q6L-WR-hZX" kind="relationship" relationship="viewControllers" id="3Up-xB-O63"/>
-                        <segue destination="NZ8-6Q-Hzs" kind="relationship" relationship="viewControllers" id="5as-s4-1xI"/>
+                        <segue destination="SwN-st-Rqo" kind="relationship" relationship="viewControllers" id="DkY-kI-e77"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCI-jx-e4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-873" y="67"/>
         </scene>
+        <!--Practice Log-->
+        <scene sceneID="OPv-QP-Rid">
+            <objects>
+                <tableViewController id="cIt-AH-xpp" customClass="TableViewController" customModule="skateAppNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2oS-TF-0Pg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="kp2-3s-Zzp">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kp2-3s-Zzp" id="04x-2T-5X4">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cIt-AH-xpp" id="3CK-xA-pJ3"/>
+                            <outlet property="delegate" destination="cIt-AH-xpp" id="o4v-ag-Fta"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Practice Log" id="qUe-kt-L3n">
+                        <barButtonItem key="rightBarButtonItem" title="Add trick" id="Iw5-zz-ITR">
+                            <connections>
+                                <segue destination="xM3-bf-OfC" kind="show" id="uuD-Lf-ofJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mTi-d2-hvF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="1065"/>
+        </scene>
         <!--Add Trick-->
         <scene sceneID="uOr-rs-r17">
             <objects>
-                <viewController id="xM3-bf-OfC" sceneMemberID="viewController">
+                <viewController id="xM3-bf-OfC" customClass="AddTrickViewController" customModule="skateAppNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7U-Cd-hd0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -454,10 +422,13 @@
                         <viewLayoutGuide key="safeArea" id="R5s-mH-NiT"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Trick" id="1KD-yu-0Xh"/>
+                    <connections>
+                        <outlet property="titleTextField" destination="C04-au-XQv" id="9wf-Jd-Lx1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwC-tU-nNg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718.840579710145" y="1058.7053571428571"/>
+            <point key="canvasLocation" x="1768" y="1065"/>
         </scene>
         <!--feed-->
         <scene sceneID="RO1-FA-Hbh">
@@ -478,25 +449,6 @@
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="-257.14285714285711"/>
         </scene>
-        <!--practice log-->
-        <scene sceneID="gSh-St-nGE">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NZ8-6Q-Hzs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="practice log" image="list.bullet" catalog="system" id="WIW-iX-Egx"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6wV-nA-RT9">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="jtG-go-Ulw" kind="relationship" relationship="rootViewController" id="WEz-eq-PSg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="irW-wd-JIw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="31.884057971014496" y="1059.375"/>
-        </scene>
         <!--messages-->
         <scene sceneID="f9l-WS-6H2">
             <objects>
@@ -516,15 +468,33 @@
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="390.40178571428572"/>
         </scene>
+        <!--Practice Log-->
+        <scene sceneID="na8-uq-Zdu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SwN-st-Rqo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Practice Log" image="square.and.pencil" catalog="system" id="spM-qj-nYd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="54s-gT-wlh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cIt-AH-xpp" kind="relationship" relationship="rootViewController" id="mDG-Kg-Xrl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LPF-bZ-Aa3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="1065"/>
+        </scene>
     </scenes>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="karlie-kloss-profile-circle" width="759" height="760"/>
         <image name="karliekloss-skatepark2" width="1000" height="667"/>
-        <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
         <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
     </resources>

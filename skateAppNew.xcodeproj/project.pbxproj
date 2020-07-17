@@ -17,6 +17,9 @@
 		1C81C23A24BFA8E800883C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C81C23824BFA8E800883C8A /* LaunchScreen.storyboard */; };
 		1C81C24524BFA8E800883C8A /* skateAppNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81C24424BFA8E800883C8A /* skateAppNewTests.swift */; };
 		1C81C25024BFA8E800883C8A /* skateAppNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81C24F24BFA8E800883C8A /* skateAppNewUITests.swift */; };
+		1CE0417024C132BB00CCB4EC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0416F24C132BB00CCB4EC /* TableViewController.swift */; };
+		1CE0417224C1330C00CCB4EC /* trick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0417124C1330C00CCB4EC /* trick.swift */; };
+		1CE0417424C13BB200CCB4EC /* AddTrickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0417324C13BB200CCB4EC /* AddTrickViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		1C81C24B24BFA8E800883C8A /* skateAppNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skateAppNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C81C24F24BFA8E800883C8A /* skateAppNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skateAppNewUITests.swift; sourceTree = "<group>"; };
 		1C81C25124BFA8E800883C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE0416F24C132BB00CCB4EC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1CE0417124C1330C00CCB4EC /* trick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trick.swift; sourceTree = "<group>"; };
+		1CE0417324C13BB200CCB4EC /* AddTrickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTrickViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,9 @@
 				1C81C22C24BFA8E700883C8A /* SceneDelegate.swift */,
 				1C81C22E24BFA8E700883C8A /* ViewController.swift */,
 				1C81C23024BFA8E700883C8A /* Main.storyboard */,
+				1CE0417324C13BB200CCB4EC /* AddTrickViewController.swift */,
+				1CE0417124C1330C00CCB4EC /* trick.swift */,
+				1CE0416F24C132BB00CCB4EC /* TableViewController.swift */,
 				1919C33124C0F51F00F98FF7 /* MessageViewController.swift */,
 				1C81C23624BFA8E800883C8A /* Assets.xcassets */,
 				1C81C23824BFA8E800883C8A /* LaunchScreen.storyboard */,
@@ -266,10 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C81C22F24BFA8E700883C8A /* ViewController.swift in Sources */,
+				1CE0417024C132BB00CCB4EC /* TableViewController.swift in Sources */,
 				1C81C22B24BFA8E700883C8A /* AppDelegate.swift in Sources */,
 				1C81C22D24BFA8E700883C8A /* SceneDelegate.swift in Sources */,
+				1CE0417424C13BB200CCB4EC /* AddTrickViewController.swift in Sources */,
 				1C81C23524BFA8E700883C8A /* skateAppNew.xcdatamodeld in Sources */,
 				1919C33224C0F52000F98FF7 /* MessageViewController.swift in Sources */,
+				1CE0417224C1330C00CCB4EC /* trick.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
