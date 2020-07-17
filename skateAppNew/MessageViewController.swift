@@ -12,13 +12,10 @@ class MessageViewController: UIViewController {
 
     var karlieMessageText = "have you heard of the new skatepark?"
     
-    //@IBOutlet weak var karlieMessage: UITableViewCell!
+    @IBOutlet weak var karlieCell: UITableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //karlieMessage.text karlieMessageText
-        // Do any additional setup after loading the view.
     }
     
 
