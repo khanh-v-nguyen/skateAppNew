@@ -12,3 +12,5 @@ class tricks {
     var name = ""
    
 }
+
+//random
