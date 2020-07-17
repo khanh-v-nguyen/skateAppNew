@@ -276,13 +276,12 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t51-Gh-GQh">
-                                <rect key="frame" x="42" y="767" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.59870029170000005" green="0.52679858739999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t51-Gh-GQh">
+                                <rect key="frame" x="42" y="768" width="126" height="29"/>
+                                <color key="backgroundColor" red="0.45098039220000002" green="0.36078431370000003" blue="0.86666666670000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="my profile"/>
+                                <state key="normal" title="  my profile"/>
                                 <connections>
                                     <segue destination="1HM-fY-Ggd" kind="show" id="W9J-Cv-wYS"/>
                                 </connections>
@@ -316,6 +315,8 @@
                             <constraint firstItem="tYU-77-a3Q" firstAttribute="leading" secondItem="iw2-YN-cK3" secondAttribute="leading" constant="42" id="jQ4-75-M1R"/>
                             <constraint firstItem="25W-vx-jME" firstAttribute="leading" secondItem="iw2-YN-cK3" secondAttribute="leading" constant="42" id="lHr-yc-y0Q"/>
                             <constraint firstItem="sqn-Ya-k6z" firstAttribute="leading" secondItem="xJm-aG-DVE" secondAttribute="trailing" constant="8" id="m68-Xx-r8n"/>
+                            <constraint firstItem="t51-Gh-GQh" firstAttribute="leading" secondItem="iw2-YN-cK3" secondAttribute="leading" constant="42" id="mlE-hT-LWw"/>
+                            <constraint firstItem="iw2-YN-cK3" firstAttribute="bottom" secondItem="t51-Gh-GQh" secondAttribute="bottom" constant="16" id="o1n-hn-vB1"/>
                             <constraint firstItem="6h6-9I-1ot" firstAttribute="leading" secondItem="Egw-KK-BeH" secondAttribute="trailing" constant="11" id="qTH-MV-ZAB"/>
                             <constraint firstItem="xJm-aG-DVE" firstAttribute="top" secondItem="tYU-77-a3Q" secondAttribute="bottom" constant="8" id="qhB-ul-p9p"/>
                             <constraint firstItem="VdU-uC-2Lk" firstAttribute="leading" secondItem="iw2-YN-cK3" secondAttribute="leading" constant="42" id="sdt-Pt-Vfh"/>
