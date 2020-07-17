@@ -10,7 +10,6 @@
         <!--All Messages-->
         <scene sceneID="IKU-fL-niV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IPq-UU-MWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Axf-fU-BzM" customClass="MessageViewController" customModule="skateAppNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C9A-jw-Xut">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -66,13 +65,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="All Messages" id="Top-L9-TDo"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPq-UU-MWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="957.97101449275374" y="390.40178571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oit-T2-H1t">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RgU-QQ-WNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="BF6-UI-846" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hiy-3J-div">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -97,13 +96,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="voZ-na-nSR"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RgU-QQ-WNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2741" y="-1"/>
         </scene>
         <!--Home-->
         <scene sceneID="b5Z-jv-2EF">
             <objects>
-                <viewController id="D1Y-ds-Ldv" sceneMemberID="viewController">
+                <viewController id="D1Y-ds-Ldv" customClass="HomeViewController" customModule="skateAppNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GvC-IM-RO5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,14 +145,17 @@
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="suit.heart.fill" catalog="system"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h6-9I-1ot">
-                                <rect key="frame" x="351" y="730" width="21" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h6-9I-1ot">
+                                <rect key="frame" x="351" y="731" width="21" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="0nK-QE-8sH"/>
                                     <constraint firstAttribute="width" constant="21" id="iiW-HP-yr3"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="suit.heart" catalog="system"/>
+                                <state key="normal" image="unlikedHeart"/>
+                                <connections>
+                                    <action selector="buttonStart:" destination="D1Y-ds-Ldv" eventType="touchUpInside" id="oAh-o8-gYf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnM-Il-l0Y">
                                 <rect key="frame" x="268" y="768" width="126" height="29"/>
@@ -257,6 +260,17 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t51-Gh-GQh">
+                                <rect key="frame" x="42" y="767" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59870029170000005" green="0.52679858739999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="my profile"/>
+                                <connections>
+                                    <segue destination="1HM-fY-Ggd" kind="show" id="W9J-Cv-wYS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -298,6 +312,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="rcE-xZ-fnn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="changeImageButton" destination="6h6-9I-1ot" id="OGm-Qb-Rdi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4n-Ya-8B6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -412,6 +429,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEo-ye-Uo1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1766.6666666666667" y="-366.29464285714283"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="Bmj-DW-tJn">
+            <objects>
+                <viewController id="1HM-fY-Ggd" customClass="ProfileViewController" customModule="skateAppNew" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eB9-gO-Fkg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NewUser39496" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj6-UZ-ay3">
+                                <rect key="frame" x="49" y="130" width="317" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter New Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tWV-Pc-vfh">
+                                <rect key="frame" x="23" y="498" width="261" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWd-AP-hgR">
+                                <rect key="frame" x="304" y="500" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change User"/>
+                                <connections>
+                                    <action selector="changeUsernameButton:" destination="1HM-fY-Ggd" eventType="touchUpInside" id="sam-nd-sEV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Bio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ie3-ME-Aho">
+                                <rect key="frame" x="23" y="560" width="261" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbY-vc-Yua">
+                                <rect key="frame" x="299" y="560" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Bio"/>
+                                <connections>
+                                    <action selector="bioButton:" destination="1HM-fY-Ggd" eventType="touchUpInside" id="ITz-M2-VXT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert Bio Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB6-4h-8jM">
+                                <rect key="frame" x="36" y="172" width="342" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fVc-gE-ogh">
+                                <rect key="frame" x="87" y="225.5" width="240" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CR8-yu-f7G"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nRL-vM-RMZ"/>
+                    <connections>
+                        <outlet property="bioLabel" destination="SB6-4h-8jM" id="qIA-tC-Img"/>
+                        <outlet property="bioTextField" destination="Ie3-ME-Aho" id="OoE-U8-wxj"/>
+                        <outlet property="usernameLabel" destination="Bj6-UZ-ay3" id="8Zi-6a-1r9"/>
+                        <outlet property="usernameTextField" destination="tWV-Pc-vfh" id="cLc-gJ-rrL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbt-Gz-m6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.97101449275374" y="-1033.2589285714284"/>
         </scene>
         <!--Karlie's Profile-->
         <scene sceneID="IEt-5p-Aly">
@@ -703,7 +790,6 @@
         <!--messages-->
         <scene sceneID="f9l-WS-6H2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kTI-n0-PUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q6L-WR-hZX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="messages" image="paperplane.fill" catalog="system" id="Sk6-cr-sYq"/>
                     <toolbarItems/>
@@ -716,6 +802,7 @@
                         <segue destination="Axf-fU-BzM" kind="relationship" relationship="rootViewController" id="MTQ-4A-xcu"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kTI-n0-PUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="390.40178571428572"/>
         </scene>
@@ -752,10 +839,11 @@
         <image name="karlie-kloss-profile-circle" width="759" height="760"/>
         <image name="karliekloss-skatepark2" width="1000" height="667"/>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
-        <image name="suit.heart" catalog="system" width="128" height="109"/>
         <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
         <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="unlikedHeart" width="980" height="858"/>
     </resources>
 </document>

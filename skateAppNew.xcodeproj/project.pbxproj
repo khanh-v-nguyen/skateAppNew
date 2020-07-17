@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1919C33224C0F52000F98FF7 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1919C33124C0F51F00F98FF7 /* MessageViewController.swift */; };
+		1C437C4724C214FA001929A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C437C4624C214FA001929A8 /* HomeViewController.swift */; };
+		1C437C4924C21961001929A8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C437C4824C21961001929A8 /* ProfileViewController.swift */; };
 		1C81C22B24BFA8E700883C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81C22A24BFA8E700883C8A /* AppDelegate.swift */; };
 		1C81C22D24BFA8E700883C8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81C22C24BFA8E700883C8A /* SceneDelegate.swift */; };
 		1C81C22F24BFA8E700883C8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81C22E24BFA8E700883C8A /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		1919C33124C0F51F00F98FF7 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		1C437C4624C214FA001929A8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1C437C4824C21961001929A8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1C81C22724BFA8E700883C8A /* skateAppNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skateAppNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C81C22A24BFA8E700883C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C81C22C24BFA8E700883C8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				1C81C22C24BFA8E700883C8A /* SceneDelegate.swift */,
 				1C81C22E24BFA8E700883C8A /* ViewController.swift */,
 				1C81C23024BFA8E700883C8A /* Main.storyboard */,
+				1C437C4824C21961001929A8 /* ProfileViewController.swift */,
+				1C437C4624C214FA001929A8 /* HomeViewController.swift */,
 				1CE0417324C13BB200CCB4EC /* AddTrickViewController.swift */,
 				1CE0417124C1330C00CCB4EC /* trick.swift */,
 				1CE0416F24C132BB00CCB4EC /* TableViewController.swift */,
@@ -276,9 +282,11 @@
 			files = (
 				1C81C22F24BFA8E700883C8A /* ViewController.swift in Sources */,
 				1CE0417024C132BB00CCB4EC /* TableViewController.swift in Sources */,
+				1C437C4924C21961001929A8 /* ProfileViewController.swift in Sources */,
 				1C81C22B24BFA8E700883C8A /* AppDelegate.swift in Sources */,
 				1C81C22D24BFA8E700883C8A /* SceneDelegate.swift in Sources */,
 				1CE0417424C13BB200CCB4EC /* AddTrickViewController.swift in Sources */,
+				1C437C4724C214FA001929A8 /* HomeViewController.swift in Sources */,
 				1C81C23524BFA8E700883C8A /* skateAppNew.xcdatamodeld in Sources */,
 				1919C33224C0F52000F98FF7 /* MessageViewController.swift in Sources */,
 				1CE0417224C1330C00CCB4EC /* trick.swift in Sources */,
